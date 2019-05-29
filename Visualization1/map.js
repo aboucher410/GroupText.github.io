@@ -38,13 +38,13 @@ $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_SOCIAL.geojson",function(data){
 
 //study space
 $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_STUDY.geojson",function(data){
-    var study = L.geoJson(data, {style: {stroke: false, fillColor: "#FF0000", fillOpacity: .5}}).addTo(map); //red
+    var study = L.geoJson(data, {style: {stroke: false, fillColor: "red", fillOpacity: .5}}).addTo(map);
     controlLayer.addOverlay(study, "Study Space");
 });
 
 //path space
 $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_PATHS.geojson",function(data){
-    var paths = L.geoJson(data, {style: {stroke: false, fillColor: "yellow", fillOpacity: .5}}).addTo(map);
+    var paths = L.geoJson(data, {style: {stroke: false, fillColor: "yellow", fillOpacity: 1}}).addTo(map);
     controlLayer.addOverlay(paths, "ADA Connecting Space");
 });
 
