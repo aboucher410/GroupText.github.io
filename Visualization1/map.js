@@ -45,7 +45,7 @@ $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_STUDY.geojson",function(data){
 //path space
 $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_PATHS.geojson",function(data){
     var paths = L.geoJson(data, {style: {stroke: false, fillColor: "black", fillOpacity: .5}}).addTo(map);
-    controlLayer.addOverlay(paths, "Pedestrian Space");
+    controlLayer.addOverlay(paths, "ADA Path");
 });
 
 function clickHandler(e) {
