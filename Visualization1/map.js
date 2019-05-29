@@ -38,7 +38,7 @@ $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_SOCIAL.geojson",function(data){
 
 //study space
 $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_STUDY.geojson",function(data){
-    var study = L.geoJson(data, {style: {stroke: false, fillColor: "red", fillOpacity: .3}}).addTo(map);
+    var study = L.geoJson(data, {style: {stroke: false, fillColor: "#FF0000", fillOpacity: .3}}).addTo(map); //red
     controlLayer.addOverlay(study, "Study Space");
 });
 
