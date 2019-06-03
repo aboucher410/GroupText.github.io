@@ -20,7 +20,7 @@ var combined = L.geoJson(combined_spaces, {style: {stroke: false, fillColor: "wh
 
 //green space
 $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_LANDSCAPE.geojson",function(data){
-    var greenspace = L.geoJson(data, {style: {stroke: false, fillColor: "#036D81", fillOpacity: .8}}).addTo(map); //black
+    var greenspace = L.geoJson(data, {style: {stroke: false, fillColor: "#132438", fillOpacity: .8}}).addTo(map); //black
     controlLayer.addOverlay(greenspace, "Green Space");
 });
 
@@ -44,7 +44,7 @@ $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_STUDY.geojson",function(data){
 
 //path space
 $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_PATHS.geojson",function(data){
-    var paths = L.geoJson(data, {style: {stroke: false, fillColor: "#132438", fillOpacity: .8}}).addTo(map); //yellow
+    var paths = L.geoJson(data, {style: {stroke: false, fillColor: "#036D81", fillOpacity: .8}}).addTo(map); //yellow
     controlLayer.addOverlay(paths, "ADA Connecting Space");
 });
 
