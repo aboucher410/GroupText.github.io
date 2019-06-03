@@ -16,35 +16,35 @@ controlLayer = L.control.layers(null, null, {collapsed: false}).addTo(map);
 //needs to be EPSG:4326 when exporting -> save as
 
 //load this geojson from separate js script
-var combined = L.geoJson(combined_spaces, {style: {stroke: false, fillColor: "white", fillOpacity: 0}}).addTo(map);
+var combined = L.geoJson(combined_spaces, {style: {stroke: false, fillColor: "white", fillOpacity: 0}}).addTo(map); //white
 
 //green space
 $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_LANDSCAPE.geojson",function(data){
-    var greenspace = L.geoJson(data, {style: {stroke: false, fillColor: "black", fillOpacity: .8}}).addTo(map);
+    var greenspace = L.geoJson(data, {style: {stroke: false, fillColor: "5F7AB6", fillOpacity: .8}}).addTo(map); //black
     controlLayer.addOverlay(greenspace, "Green Space");
 });
 
 //diversity space
 $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_DIVERSITY.geojson",function(data){
-    var diversity = L.geoJson(data, {style: {stroke: false, fillColor: "purple", fillOpacity: .8}}).addTo(map);
+    var diversity = L.geoJson(data, {style: {stroke: false, fillColor: "5C90A1", fillOpacity: .8}}).addTo(map); //purple
     controlLayer.addOverlay(diversity, "Diversity Space");
 });
 
 //social space
 $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_SOCIAL.geojson",function(data){
-    var social = L.geoJson(data, {style: {stroke: false, fillColor: "green", fillOpacity: .8}}).addTo(map);
+    var social = L.geoJson(data, {style: {stroke: false, fillColor: "B3B6AD", fillOpacity: .8}}).addTo(map); //green
     controlLayer.addOverlay(social, "Social Space");
 });
 
 //study space
 $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_STUDY.geojson",function(data){
-    var study = L.geoJson(data, {style: {stroke: false, fillColor: "red", fillOpacity: .8}}).addTo(map);
+    var study = L.geoJson(data, {style: {stroke: false, fillColor: "BDAD93", fillOpacity: .8}}).addTo(map); //red
     controlLayer.addOverlay(study, "Study Space");
 });
 
 //path space
 $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_PATHS.geojson",function(data){
-    var paths = L.geoJson(data, {style: {stroke: false, fillColor: "yellow", fillOpacity: .8}}).addTo(map);
+    var paths = L.geoJson(data, {style: {stroke: false, fillColor: "B56F61", fillOpacity: .8}}).addTo(map); //yellow
     controlLayer.addOverlay(paths, "ADA Connecting Space");
 });
 
