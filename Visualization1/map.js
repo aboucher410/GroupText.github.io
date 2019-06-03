@@ -1,5 +1,5 @@
 
-var map = L.map('map').setView([47.655548, -122.303200], 16);
+var map = L.map('map').setView([47.655548, -122.303200], 17);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/csorge/cjvhhz99w0jnm1cq3per2445t/tiles/256/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Sources: UW Libraries',
@@ -8,7 +8,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/csorge/cjvhhz99w0jnm1cq3per2445t/t
 }).addTo(map);
 
 L.easyButton( 'fa-crosshairs', function(btn, map){
-    map.setView(new L.LatLng(47.655548, -122.303200), 16);
+    map.setView(new L.LatLng(47.655548, -122.303200), 17);
 }).addTo(map);
 
 controlLayer = L.control.layers(null, null, {collapsed: true}).addTo(map);
