@@ -32,7 +32,7 @@ $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_DIVERSITY.geojson",function(data){
 
 //social space
 $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_SOCIAL.geojson",function(data){
-    var social = L.geoJson(data, {style: {stroke: false, fillColor: "#FCF9E4", fillOpacity: .8}}).addTo(map); //green
+    var social = L.geoJson(data, {style: {stroke: false, fillColor: "#fae88b", fillOpacity: .8}}).addTo(map); //green
     controlLayer.addOverlay(social, "Social Space");
 });
 
