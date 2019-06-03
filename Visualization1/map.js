@@ -20,13 +20,13 @@ var combined = L.geoJson(combined_spaces, {style: {stroke: false, fillColor: "wh
 
 //green space
 $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_LANDSCAPE.geojson",function(data){
-    var greenspace = L.geoJson(data, {style: {stroke: false, fillColor: "#132438", fillOpacity: .8}}).addTo(map); //black
+    var greenspace = L.geoJson(data, {style: {stroke: false, fillColor: "#13929E", fillOpacity: .8}}).addTo(map); //black
     controlLayer.addOverlay(greenspace, "Green Space");
 });
 
 //diversity space
 $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_DIVERSITY.geojson",function(data){
-    var diversity = L.geoJson(data, {style: {stroke: false, fillColor: "#13929E", fillOpacity: .8}}).addTo(map); //purple
+    var diversity = L.geoJson(data, {style: {stroke: false, fillColor: "#132438", fillOpacity: .8}}).addTo(map); //purple
     controlLayer.addOverlay(diversity, "Diversity Space");
 });
 
