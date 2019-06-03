@@ -44,7 +44,7 @@ $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_STUDY.geojson",function(data){
 
 //path space
 $.getJSON("CAMPUS_GEOJSONS/CAMPUS_GEOJSON_PATHS.geojson",function(data){
-    var paths = L.geoJson(data, {style: {stroke: false, fillColor: "#036D81", fillOpacity: .8}}).addTo(map); //yellow
+    var paths = L.geoJson(data, {style: {stroke: false, fillColor: "#107B5D", fillOpacity: .8}}).addTo(map); //yellow
     controlLayer.addOverlay(paths, "ADA Connecting Space");
 });
 
