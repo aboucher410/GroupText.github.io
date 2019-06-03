@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <!-- <link rel='stylesheet' href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.3/mapbox-gl.css" /> -->
+    <link rel='stylesheet' href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.3/mapbox-gl.css" />
 </head>
 
 <body>
@@ -18,14 +18,21 @@
             <p>University of Washington Seattle</p>
             <p>Amy, Carey, Henry, Lindsey, Robert</p>
         </div> -->
+        <div id='color-legend' class='legend'>
+		    <h4>Legend</h4>
+		    <div><span style='background-color: #E6433B'></span>Study Space</div>
+		    <div><span style='background-color: #8B4225'></span>10,000,000</div>
+		    <div><span style='background-color: #A25626'></span>7,500,000</div>
+		    <div><span style='background-color: #B86B25'></span>5,000,000</div>
+		    <div><span style='background-color: #CA8323'></span>2,500,000</div>
     </div>
 
     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <script src="https://unpkg.com/mapbox-gl-leaflet@0.0.3/leaflet-mapbox-gl.js"></script> -->
-    <!-- <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.3/mapbox-gl.js'></script> -->
+    <script src="https://unpkg.com/mapbox-gl-leaflet@0.0.3/leaflet-mapbox-gl.js"></script>
     <script src="https://unpkg.com/@mapbox/leaflet-pip@latest/leaflet-pip.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.3/mapbox-gl.js'></script>
 
     <script src="CAMPUS_GEOJSON_COMBINED.js"></script>
     <script src="map.js"></script>
