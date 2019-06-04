@@ -95,8 +95,13 @@
           </ul></p>
 
         <p><b>Classifying the terrain</b><ul>
-          <li>bloop
-            
+          <li>On following tutorial guidelines on how to create a deep neural network model that accepts an aerial image as input and returns a land cover label for every pixel in the image.</li>
+          <li>A trained model of 250 epochs was applied to an approximately 1km x 1km region centered at point in Pierce County, WA.</li>
+          <li>Our evaluation data consist of a pair of files not used during training: a NAIP aerial image from USGS and ground-truth land cover labels from USDA.</li>
+          <li>On loading this pair of files, we match the transposition, normalization, and label-grouping strategies.
+          <li>The trained model takes an input with dimensions 256 pixels x 256 pixels, and produces an output with dimensions 128 x 128 (corresponding to the center of the input region). To get output labels for the entire region of interest, the evaluation script must therefore use a tiling strategy.</li>
+          <li>Our trained model outputs predictions for five classes, which we will visualize using the following color code:</li>
+          <li>-No data: black</li>
           </ul></p>
 
       </div>
