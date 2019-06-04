@@ -101,7 +101,13 @@
           <li>On loading this pair of files, we match the transposition, normalization, and label-grouping strategies.
           <li>The trained model takes an input with dimensions 256 pixels x 256 pixels, and produces an output with dimensions 128 x 128 (corresponding to the center of the input region). To get output labels for the entire region of interest, the evaluation script must therefore use a tiling strategy.</li>
           <li>Our trained model outputs predictions for five classes, which we will visualize using the following color code:</li>
-          <li>-No data: black</li>
+          <ul>
+            <li>No data: black</li>
+            <li>Water: blue</li>
+            <li>Trees: dark green</li>
+            <li>Herbaceous: light green</li>
+            <li>Barren/impervious: gray</li>
+          </ul>
           </ul></p>
 
       </div>
